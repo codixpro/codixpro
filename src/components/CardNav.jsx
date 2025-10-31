@@ -128,6 +128,23 @@ const CardNav = ({
   const setCardRef = i => el => {
     if (el) cardsRef.current[i] = el;
   };
+  const handleClick = () => {
+    // Close menu if open
+    if (isHamburgerOpen) {
+      toggleMenu();
+    }
+
+    // Smoothly scroll to "services" section
+    const section = document.getElementById("services");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Ensure menu state is closed
+    setIsHamburgerOpen(false);
+    setIsExpanded(false);
+  };
+
 
   return (
     <div
@@ -155,14 +172,12 @@ const CardNav = ({
             style={{ color: menuColor || '#000' }}
           >
             <div
-              className={`hamburger-line w-[30px] h-[2px] bg-current transition-all duration-300 ease-linear ${
-                isHamburgerOpen ? 'translate-y-[4px] rotate-45' : ''
-              } group-hover:opacity-75`}
+              className={`hamburger-line w-[30px] h-[2px] bg-current transition-all duration-300 ease-linear ${isHamburgerOpen ? 'translate-y-[4px] rotate-45' : ''
+                } group-hover:opacity-75`}
             />
             <div
-              className={`hamburger-line w-[30px] h-[2px] bg-current transition-all duration-300 ease-linear ${
-                isHamburgerOpen ? '-translate-y-[4px] -rotate-45' : ''
-              } group-hover:opacity-75`}
+              className={`hamburger-line w-[30px] h-[2px] bg-current transition-all duration-300 ease-linear ${isHamburgerOpen ? '-translate-y-[4px] -rotate-45' : ''
+                } group-hover:opacity-75`}
             />
           </div>
 
@@ -171,6 +186,7 @@ const CardNav = ({
             type="button"
             className="card-nav-cta-button hidden md:inline-flex items-center justify-center border-0 rounded-lg px-4 h-[42px] font-medium cursor-pointer transition-colors duration-300"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+            onClick={handleClick}
           >
             Get Started
           </button>
@@ -178,9 +194,8 @@ const CardNav = ({
 
         {/* ====== NAV CONTENT ====== */}
         <div
-          className={`card-nav-content absolute left-0 right-0 top-[60px] bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start z-[1] ${
-            isExpanded ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
-          } md:flex-row md:items-end md:gap-[12px]`}
+          className={`card-nav-content absolute left-0 right-0 top-[60px] bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start z-[1] ${isExpanded ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
+            } md:flex-row md:items-end md:gap-[12px]`}
           aria-hidden={!isExpanded}
         >
           {(items || []).slice(0, isExpanded ? items.length : 10).map((item, idx) => (
