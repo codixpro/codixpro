@@ -12,7 +12,7 @@ const Projects = () => {
             buttons: ["Online Store", "Sales Growth"],
         },
         {
-            image: 'https://private-user-images.githubusercontent.com/132199879/496550688-2c274f68-7157-4ce2-aa33-df640d80e2ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE5NzA3MDIsIm5iZiI6MTc2MTk3MDQwMiwicGF0aCI6Ii8xMzIxOTk4NzkvNDk2NTUwNjg4LTJjMjc0ZjY4LTcxNTctNGNlMi1hYTMzLWRmNjQwZDgwZTJlZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEwMVQwNDEzMjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYTE2MTg5ZTAxMTUxMWI2YTM3Y2JlNTM0YjU0MzQxYmUwOWU3ZjA3YjBiZGVmMTdkOGY2YzgyYjVhYTIzMTE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.RjD23gzsg97dsclM90Kc9xKQppMl_6ChKqfIlODzp1Y',
+            image: 'https://i.ytimg.com/vi/Jm80be-l2kw/maxresdefault.jpg',
             title: "3D Website",
             desc: "Establish a strong online presence and drive client trust with a professional, high-performing website that represents your brand perfectly.",
             buttons: ["Online Presence", "Client Trust"],
