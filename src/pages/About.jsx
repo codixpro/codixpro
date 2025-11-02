@@ -1,8 +1,5 @@
-import React from 'react'
-// import SpotlightCard from '../components/SpotlightCard'
-// import CountUp from '../components/CountUp';
 import LogoLoop from '../components/LogoLoop';
-import { SiReact,SiPhp,SiLaravel,SiNextdotjs,SiLangchain,SiNodedotjs,SiExpress,SiCanva, SiWordpress, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiReact,SiPhp,SiLaravel,SiNextdotjs,SiLangchain,SiNodedotjs,SiExpress,SiCanva, SiWordpress, SiTypescript, SiTailwindcss,} from 'react-icons/si';
 const techLogos = [
   { node: <SiReact />, title: "React"},
   { node: <SiWordpress />, title: "Wordpress"},

@@ -6,13 +6,15 @@ import { image } from 'framer-motion/client';
 const Projects = () => {
     const projects = [
         {
-            image: 'https://images04.nicepage.com/feature/612016/ecommerce-websites.jpg',
+            
+            image: 'https://i.postimg.cc/mkcr5Dy9/Whats-App-Image-2025-11-02-at-13-52-11-d6dd04a8.jpg',
             title: "E-Commerce",
             desc: "Build your online store and boost sales growth with a seamless, secure, and scalable shopping experience tailored for your business.",
             buttons: ["Online Store", "Sales Growth"],
         },
         {
-            image: 'https://i.ytimg.com/vi/Jm80be-l2kw/maxresdefault.jpg',
+            link: 'https://github.com/Asifekhlaque/ThreeJsPlanetProject',
+            image: 'https://i.postimg.cc/cCFh1Fp9/496550688-2c274f68-7157-4ce2-aa33-df640d80e2ee.png',
             title: "3D Website",
             desc: "Establish a strong online presence and drive client trust with a professional, high-performing website that represents your brand perfectly.",
             buttons: ["Online Presence", "Client Trust"],
@@ -39,7 +41,7 @@ const Projects = () => {
                         className="custom-spotlight-card w-[360px] md:w-[380px] mb-4"
                         spotlightColor="rgba(0, 229, 255, 0.2)"
                     >
-                    
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                             {item.image && <img src={item.image} alt={item.title} className="w-full h-[200px] object-cover rounded-2xl mb-2" />}
                             <h1 className="text-2xl font-bold text-white">{item.title}</h1>
 
@@ -54,7 +56,9 @@ const Projects = () => {
                                     {btn}
                                 </button>
                             ))}
+                            
                         </div>
+                    </a>
                     </SpotlightCard>
                 ))}
             </div>

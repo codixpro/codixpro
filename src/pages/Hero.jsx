@@ -39,7 +39,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2, ease: "easeOut" }}
       >
-        <LetterGlitch glitchSpeed={5} centerVignette={true} outerVignette={false} smooth={true} />
+        <LetterGlitch glitchSpeed={200} centerVignette={true} outerVignette={false} smooth={true} />
       </motion.div>
 
       {/* ⚫ Overlay */}

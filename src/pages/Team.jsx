@@ -8,15 +8,15 @@ const Team = () => {
             
             title: "Vishal Kumar",
             subtitle: "Software Analyst Engineer",
-            handle: "@vishalkumar",
+            handle: "@30.3320n.77.9809e",
             borderColor: "#3B82F6",
             gradient: "linear-gradient(180deg, red, #000)",
-            url: "https://github.com/itvishalkumar8067"
+            url: "https://github.com/ltvishalkumar8067-tech"
         },
         {
             title: "Asif Ekhlaque",
             subtitle: "MERN Stack Developer",
-            handle: "@asifekhlaque",
+            handle: "@asifekhlaque4",
             borderColor: "#3B82F6",
             gradient: "linear-gradient(180deg, #0d00ff, #000)",
             url: "https://github.com/asifekhlaque"
@@ -24,7 +24,7 @@ const Team = () => {
         {
             title: "Ajay Gupta",
             subtitle: "PHP Developer",
-            handle: "@ajaygupta",
+            handle: "@its_unconquered_044",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg, green, #000)",
             url: "https://github.com/ajaygupta8434"
@@ -32,18 +32,18 @@ const Team = () => {
         {
             title: "Ritik Kumar",
             subtitle: "Frontend Developer",
-            handle: "@ritik",
+            handle: "@ritikkk_ydv4921",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg, #ffb700, #000)",
-            // url: "https://linkedin.com/in/mikechen"
+            url: "https://www.instagram.com/ritikkk__ydv4921/"
         },
         {
             title: "Shubham Kumar",
             subtitle: "Social Media Manager",
-            handle: "@shubhamkumar",
+            handle: "@the_shivam_y",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg,#9000ff , #000)",
-            // url: "https://linkedin.com/in/mikechen"
+            url: "https://www.instagram.com/the_shivam_y/"
         },
         {
             title: "Manshi Kumari",
@@ -51,7 +51,7 @@ const Team = () => {
             handle: "@manshi",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg, #ff00d0, #000)",
-            // url: "https://linkedin.com/in/mikechen"
+            url: "https://linkedin.com/in/manshi-kumari-971799284"
         },
     ];
 
