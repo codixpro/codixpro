@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Team from "./pages/Team";
+import AiTools from "./pages/AiTools";
 import Loader from "./pages/Loader";
 import { useState, useEffect } from "react";
 
@@ -73,10 +74,9 @@ function App() {
       <section id="projects">
         <Projects />
       </section>
-
-      <section id="team" className="bg-black">
-        <Team />
-      </section>
+      {/* <section id="AiTools">
+        <AiTools />
+      </section> */}
 
       <section id="contact">
         <Contact />
