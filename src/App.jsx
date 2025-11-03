@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div class="overflow-hidden">
       {isLoading ?
         <Loader onFinish={() => setIsLoading(false)} /> :
         <section id="home">
@@ -87,7 +87,7 @@ function App() {
         <p>&copy; 2025 CodixPro. All rights reserved.</p>
       </footer>
       )
-    </>
+    </div>
   );
 }
 
