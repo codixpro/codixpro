@@ -12,7 +12,7 @@ const Hero = () => {
     
     {
       label: "Get In Touch",
-      bgColor: "#3D2A55",
+      bgColor: "#3113aa",
       textColor: "#fff",
       links: [
         { label: "Email", ariaLabel: "Email us", href: "mailto:codixpro4@gmail.com?subject=Inquiry%20from%20Website&body=Hello%20CodixPro%20Team," },
@@ -43,7 +43,7 @@ const Hero = () => {
       </motion.div>
 
       {/* ⚫ Overlay */}
-      <div className="absolute inset-0 bg-black/35 -z-10" />
+      <div className="absolute inset-0 bg-black/45 -z-10" />
 
       {/* 🧭 Navbar */}
       <motion.div

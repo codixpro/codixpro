@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { SiGooglemeet } from "react-icons/si";
 import Hero from "./pages/Hero";
 import Services from "./pages/Services";
@@ -6,31 +6,60 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Team from "./pages/Team";
+import Loader from "./pages/Loader";
+import { useState, useEffect } from "react";
 
 function App() {
-  return (
-    <div className="overflow-hidden">
-      {/* Hero Section */}
-      <section id="home">
-        <Hero />
-      </section>
+  const [isLoading, setIsLoading] = useState(true);
 
-      {/* Floating Google Meet Link */}
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1800);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>
+      {isLoading ?
+        <Loader onFinish={() => setIsLoading(false)} /> :
+        <section id="home">
+          <Hero />
+        </section>
+      }
+
+
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-        className="relative z-30 flex flex-col items-center justify-center h-full text-center px-6"
+        initial={{ opacity: 0, y: 50, scale: 0.8 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{
+          delay: 2,
+          duration: 0.8,
+          ease: [0.25, 0.1, 0.25, 1], // smooth cubic-bezier
+          type: "spring",
+          stiffness: 120,
+        }}
+        className="fixed bottom-11 right-6 z-50"
       >
-        <a
+        <motion.a
           href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2_C6gFuNB5P4Csx_n9YLPpTNvS7ffMrgqg6zVmeIKBkoV4ycDle4L4gwCZfhjjP96fLpUYIFwE?gv=true"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-black flex justify-center items-center h-[60px] w-[60px] rounded-full fixed bottom-11 right-6 z-50 border-2 border-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-green-400/50"
+          whileHover={{
+            scale: 1.15,
+            rotate: 5,
+            boxShadow: "0px 0px 25px rgba(16, 185, 129, 0.5)", // green glow
+          }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 15,
+          }}
+          className="bg-black flex justify-center items-center h-[60px] w-[60px] rounded-full border-2 border-white shadow-lg"
         >
           <SiGooglemeet className="w-8 h-8 text-white" />
-        </a>
+        </motion.a>
       </motion.div>
+
 
       {/* Other Sections */}
       <section id="about">
@@ -55,9 +84,10 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-4 text-center">
-        <p>&copy; 2025 codixpro. All rights reserved.</p>
+        <p>&copy; 2025 CodixPro. All rights reserved.</p>
       </footer>
-    </div>
+      )
+    </>
   );
 }
 

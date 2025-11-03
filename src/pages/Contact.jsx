@@ -6,6 +6,7 @@ import { useState } from 'react';
 const Contact = () => {
     const [result, setResult] = useState("");
 
+    // Main Form Handler
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -21,21 +22,21 @@ const Contact = () => {
         event.target.reset();
     };
     return (
-        <div className='bg-black pt-5  w-screen flex justify-center'>
+        <div className='bg-black pt-5 text-white'>
             <SpotlightCard
                 className="custom-spotlight-card w-screen flex flex-wrap justify-center"
-                spotlightColor="rgba(0, 229, 255, 0.2)"
+                spotlightColor="rgba(0, 229, 255, 0.2) "
             >
                 <div className="md:w-1/3 space-y-3 mb-3">
-                    <h1 className="text-4xl font-bold text-white">Stay in Touch</h1>
+                    <h1 className="text-4xl font-bold ">Stay in Touch</h1>
                     <p className="text-gray-300 max-w-md">
                         We're here to help! Reach out to us for any inquiries, feedback, or collaboration opportunities.
                     </p>
                     <div className="mt-4">
-                        <p className="text-white flex gap-2 max-w-md">
+                        <p className=" flex gap-2 max-w-md">
                             <Mail /> <a href="mailto:codixpro4@gmail.com" className="text-white hover:underline">codixpro4@gmail.com</a>
                         </p>
-                        <p className="text-white max-w-md flex gap-2 mt-2">
+                        <p className="max-w-md flex gap-2 mt-2">
                             <Instagram /> <a href="https://www.instagram.com/codixpro/" className="text-white hover:underline">@codixpro</a>
                         </p>
                     </div>
@@ -61,7 +62,7 @@ const Contact = () => {
                     ></textarea>
                     <button
                         type="submit"
-                        className="w-full h-10 rounded-3xl bg-white text-black font-semibold hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                        className="w-full h-10 rounded-3xl bg-white font-semibold hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition border-2 border-indigo-600 text-black"
                     >
                         Submit
                     </button>
