@@ -47,17 +47,20 @@ const Contact = () => {
                         type="text"
                         name='Name'
                         placeholder="Enter Your Name"
+                        required
                         className="placeholder:text-gray-400 border border-gray-300 w-full h-10 px-4 rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-amber-50"
                     />
                     <input
                         type="email"
                         name='Email'
                         placeholder="Enter Your Email"
+                        required
                         className="placeholder:text-gray-400 border border-gray-300 w-full h-10 px-4 rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-amber-50"
                     />
                     <textarea
                         name='Message'
                         placeholder="Enter Your Message"
+                        required
                         className="placeholder:text-gray-400 border border-gray-300 w-full h-40 px-4 py-2 rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-amber-50"
                     ></textarea>
                     <button

@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div class="overflow-hidden">
+    <div className="overflow-hidden">
       {isLoading ?
         <Loader onFinish={() => setIsLoading(false)} /> :
         <section id="home">
@@ -77,6 +77,10 @@ function App() {
       {/* <section id="AiTools">
         <AiTools />
       </section> */}
+
+      <section id="team">
+        <Team />
+      </section>
 
       <section id="contact">
         <Contact />

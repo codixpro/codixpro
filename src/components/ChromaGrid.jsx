@@ -69,6 +69,16 @@ const ChromaGrid = ({
             borderColor: '#06B6D4',
             gradient: 'linear-gradient(135deg,#06B6D4,#000)',
             url: 'https://aws.amazon.com/'
+        },
+        {
+            image: 'https://i.pravatar.cc/300?img=60',
+            title: 'Tyler Rodriguez',
+            subtitle: 'Cloud Architect',
+            handle: '@tylerrod',
+            borderColor: '#06B6D4',
+            gradient: 'linear-gradient(135deg,#06B6D4,#000)',
+            url: 'https://aws.amazon.com/'
+
         }
     ];
 
