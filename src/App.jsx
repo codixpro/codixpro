@@ -90,7 +90,6 @@ function App() {
       <footer className="bg-black text-white py-4 text-center">
         <p>&copy; 2025 CodixPro. All rights reserved.</p>
       </footer>
-      )
     </div>
   );
 }
