@@ -32,9 +32,9 @@ const Loader = ({ onFinish }) => {
         
       </div>
       {/* Background LaserFlow animation */}
-      <div className="absolute bottom-[-15%] left-[-20%] inset-0">
+      {/* <div className="absolute bottom-[-15%] left-[-20%] inset-0">
         <LaserFlow color="#FF79C6" />
-      </div>
+      </div> */}
     </div>
   );
 };

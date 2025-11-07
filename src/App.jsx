@@ -5,10 +5,12 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import GoogleSheetForm from "./pages/GoogleSheetForm ";
 import Team from "./pages/Team";
 import AiTools from "./pages/AiTools";
 import Loader from "./pages/Loader";
 import { useState, useEffect } from "react";
+import Carousel from "./components/Carousel";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -74,17 +76,15 @@ function App() {
       <section id="projects">
         <Projects />
       </section>
-      {/* <section id="AiTools">
-        <AiTools />
-      </section> */}
 
       <section id="team">
         <Team />
       </section>
 
       <section id="contact">
-        <Contact />
+        <GoogleSheetForm />
       </section>
+      
 
       {/* Footer */}
       <footer className="bg-black text-white py-4 text-center">
