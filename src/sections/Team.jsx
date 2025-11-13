@@ -78,7 +78,7 @@ const Team = () => {
                         </p>
                     </div >
 
-                    <img src="./src/assets/team.jpg" alt="team" className="h-[220px] w-[400px] object-cover rounded-2xl border-2 border-gray-50 mt-2 mb-2" />
+                    <img src="https://postimg.cc/CzC8bNjt" alt="team" className="h-[220px] w-[400px] object-cover rounded-2xl border-2 border-gray-50 mt-2 mb-2" />
 
 
                 </div>
