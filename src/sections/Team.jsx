@@ -73,17 +73,17 @@ const Team = () => {
                     <div>
                         <h1 className="text-4xl font-bold text-white">Meet Our Team</h1>
                         <p className="text-gray-300 max-w-md">
-                            Our team of experts brings a wealth of knowledge and experience to the table,
-                            ensuring you receive the best possible service and results.
+                            Meet our team of passionate experts dedicated to delivering innovative solutions, exceptional service, and results that truly elevate your brand.
                         </p>
                     </div >
 
-                    {/* <img src="https://i.postimg.cc/bNWRcVdz/Whats-App-Image-2025-11-13-at-19-03-43-b81de0f6.jpg" alt="team" className="h-[220px] w-[400px] object-cover rounded-2xl border-2 border-gray-50 mt-2 mb-2" /> */}
+
+                    {/* <img src="https://i.postimg.cc/bNWRcVdz/Whats-App-Image-2025-11-13-at-19-03-43-b81de0f6.jpg" alt="team" className="h-[290px] w-[400px] rounded-2xl border-2 border-gray-50 mt-2 mb-2" /> */}
 
 
                 </div>
 
-                <div className="md:w-2/3 flex flex-wrap justify-center items-center"> {/* clean layout */}
+                <div className="md:w-2/3 flex flex-wrap justify-center items-center mt-3"> {/* clean layout */}
                     <ChromaGrid
                         items={items}
                         radius={300}

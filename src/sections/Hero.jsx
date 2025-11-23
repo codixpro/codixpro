@@ -81,8 +81,7 @@ const Hero = () => {
         />
 
         <p className="text-gray-300 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
-          Crafting beautiful, functional, and high-performance digital experiences
-          that empower brands and engage audiences across the web.
+          Creates high-performance, visually stunning, and user-focused digital experiences that elevate brands and drive meaningful engagement across the web.
         </p>
 
         {/* CTA Buttons */}
